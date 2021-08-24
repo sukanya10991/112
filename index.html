@@ -1,0 +1,55 @@
+<html>
+
+<head>
+  <title>MobileNet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <center>
+    <h2>Image Identification website! Trained with over 3 million images!<sup><img src="tenor.gif"></sup></h2>
+  </center>
+
+  <span class="col-md-6 col-sm-6 col-xs-12">
+    <div id="one">
+      <br>
+      <center>
+        <p>Camera View</p>
+        <br>
+        <div id="camera"></div>
+        <br>
+        <button id="take_image" onclick="take_image()">Take Image</button>
+      </center>
+    </div>
+  </span>
+        <span class="col-md-6 col-sm-6 col-xs-12">
+    <div id="two">
+      <center>
+        <br>
+        <p>Picture</p>
+        <br>
+        <div id="picture"></div>
+        <br>
+        <button id="identify_image" onclick="identify_image()">Identify Image</button>
+      </center>
+    </div>
+  </span>
+    <br>
+    <br>
+    <div class="col-md-12 col-sm-12 col-xs-12" id="result">
+      <img id="bulb_img" src="bulb.gif"><span id="answer"></span>
+    </div>
+ 
+
+  <script src="main.js"></script>
+</body>
+
+</html>
